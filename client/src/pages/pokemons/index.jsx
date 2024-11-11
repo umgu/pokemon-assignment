@@ -9,7 +9,6 @@ const Pokemons = () => {
 
     useEffect(() => {
         API_SERVICE.get("/pokemon").then((res) => {
-            console.log(res.data);
             const data = res.data;
             if (data) {
                 setPokemonsDetail(data)
